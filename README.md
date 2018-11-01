@@ -1,5 +1,5 @@
 # rof
-rof is  a launcher script to avoid launching multiple instance of the same window. The name stands for [r]un [o]r set [f]ocus).
+rof is  a launcher script to avoid launching multiple instances of the same window. The name stands for [r]un [o]r set [f]ocus).
 
 While playing with [my collection of Tint2 executors](https://github.com/nwg-piotr/tint2-executors) one of things I hated most 
 was that commands assigned to mouse events would execute again and again after each click, even if previous instances were 
