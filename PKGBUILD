@@ -7,7 +7,7 @@ arch=('x86_64')
 url="https://github.com/nwg-piotr/tint2-executors"
 license=('GPL3')
 depends=('xorg-xprop' 'wmctrl')
-source=("https://raw.githubusercontent.com/nwg-piotr/tint2-executors/master/rof_pkg/rof")
+source=("https://raw.githubusercontent.com/nwg-piotr/rof/master/rof")
 
 md5sums=('6b970b4dc0c407d1e50a827873605178')
 
