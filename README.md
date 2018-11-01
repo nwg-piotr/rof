@@ -18,10 +18,10 @@ rof [-P process_name] command
 
 Use `rof command` to simply run if the command and the process name are the same.
 
-Provide the optional process name e.g. if the command is a script which runs another command:
+Provide the optional process name, for instance if the command is a script which runs another command:
 
 ```
-`rof -P zenity zenity-set-volume.sh`
+rof -P zenity zenity-set-volume.sh
 ```
 
 launches the script which opens a zenity box, with arguments: `zenity --scale --value ${lvl} --title "Volume" --text "Set master volume level"`
