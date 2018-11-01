@@ -8,7 +8,7 @@ window. Having no better idea on how to achieve this, I wrote this short script.
 
 ## Dependencies:
 
-`xorg-xprop`, `wmctrl` (valid for Arch Linux; package names may vary in othe distributions)
+`xorg-xprop`, `wmctrl` (valid for Arch Linux; package names may vary in other distributions)
 
 ## Usage:
 
