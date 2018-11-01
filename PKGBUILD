@@ -9,7 +9,7 @@ license=('GPL3')
 depends=('xorg-xprop' 'wmctrl')
 source=("https://raw.githubusercontent.com/nwg-piotr/rof/master/rof")
 
-md5sums=('6b970b4dc0c407d1e50a827873605178')
+md5sums=('9cfcb57b864d33e04c80b2d0124724a6')
 
 package() {
   install -D -m 755 rof \
