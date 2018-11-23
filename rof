@@ -22,19 +22,19 @@ if [[ $(which wmctrl) != *"/wmctrl"* ]]; then
     exit
 fi
 
-if [ ! -z "$1" ]; then
+if [[ ! -z "$1" ]]; then
 
     if [[ "$1" == "-P" ]]; then
 
-       if [ "$#" -ge 3 ]; then
+       if [[ "$#" -ge 3 ]]; then
            # find process ID
            pid=$(xprop -name $2 | grep PID | awk '{print $3}')
-           if [ ! -z "$pid" ]; then
+           if [[ ! -z "$pid" ]]; then
                # find window ID by process ID
                win=$(wmctrl -lp | grep $pid | awk '{print $1}')
                wmctrl -i -a ${win}
            else
-               sh -c "${@:3} &"
+               exec "${@:3}" &
            fi
        else
            echo -e "\nShould be: rof -P process_name command\n"
@@ -52,14 +52,14 @@ if [ ! -z "$1" ]; then
 
        # find process ID
        pid=$(xprop -name $1 | grep PID | awk '{print $3}')
-       if [ ! -z "$pid" ]; then
+       if [[ ! -z "$pid" ]]; then
            # find window ID by process ID
            win=$(wmctrl -lp | grep ${pid} | awk '{print $1}')
            # "Set focus on window id $win"
            wmctrl -i -a ${win}
        else
            # "Launch a new instance of $1"
-           sh -c "$@ &"
+           exec "$@" &
        fi
     fi
 else
